@@ -1,4 +1,4 @@
-package Delivery;
+package kea.exercise.deliverybackendexamprep.Delivery;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class Delivery {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private LocalDate deliveryDate;
     private String fromWarehouse;

@@ -1,4 +1,4 @@
-package Van;
+package kea.exercise.deliverybackendexamprep.Van;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,10 +15,10 @@ import lombok.Setter;
 public class Van {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     private  String brand;
     private String model;
-    private long capacityInKilos;
+    private Long capacityInKilos;
 
 }

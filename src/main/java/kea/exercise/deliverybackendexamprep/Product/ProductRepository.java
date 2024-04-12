@@ -1,2 +1,8 @@
-package kea.exercise.deliverybackendexamprep.Product;public class ProductRepository {
+package kea.exercise.deliverybackendexamprep.Product;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product, Long> {
+
 }

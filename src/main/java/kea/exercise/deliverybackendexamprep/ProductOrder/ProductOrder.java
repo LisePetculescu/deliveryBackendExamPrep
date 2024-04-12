@@ -1,7 +1,7 @@
-package ProductOrder;
+package kea.exercise.deliverybackendexamprep.ProductOrder;
 
 
-import Product.Product;
+import kea.exercise.deliverybackendexamprep.Product.Product;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +14,7 @@ import lombok.Setter;
 public class ProductOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
 
     @ManyToOne
     private Product product;
