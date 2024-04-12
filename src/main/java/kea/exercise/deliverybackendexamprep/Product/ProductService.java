@@ -23,4 +23,29 @@ public class ProductService {
     public Optional<Product> getProductById(Long id) {
         return productRepository.findById(id);
     }
+
+    public Product createProduct(Product product) {
+        return productRepository.save(product);
+    }
+
+    public Optional<Product> getProductByName(String name) {
+        return productRepository.findByName(name);
+    }
+
+    public Optional<Product> updateProduct(Long id, Product product) {
+        if (productRepository.existsById(id)) {
+            product.setId(id);
+            return Optional.of(productRepository.save(product));
+        } else {
+            return Optional.empty();
+        }
+    }
+
+    public Optional<Product> deleteProduct(Long id) {
+        Optional<Product> product = productRepository.findById(id);
+        if (product.isPresent()) {
+            productRepository.deleteById(id);
+        }
+        return product;
+    }
 }

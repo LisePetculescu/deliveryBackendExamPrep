@@ -20,4 +20,8 @@ public class ProductOrder {
     private Product product;
     private int quantity;
 
+    public ProductOrder(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
 }

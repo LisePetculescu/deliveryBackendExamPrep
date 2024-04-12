@@ -19,5 +19,12 @@ public class Product {
 
     private String name;
     private double price;
-    private int weightInKilos;
+    private double weightInGrams;
+
+
+    public Product(String name, double price, double weightInGrams) {
+        this.name = name;
+        this.price = price;
+        this.weightInGrams = weightInGrams;
+    }
 }
