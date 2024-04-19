@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
-
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/deliveries")
 public class DeliveryController {
@@ -32,10 +32,10 @@ public class DeliveryController {
     }
 
     // make a route for adding productOrders by id to a delivery by id
-   @PutMapping("/{deliveryId}/addProductOrder/{productOrderId}")
-    public ResponseEntity<Delivery> addProductOrderToDelivery(@PathVariable Long deliveryId, @PathVariable Long productOrderId) {
-        return ResponseEntity.of(deliveryService.addProductOrderToDelivery(deliveryId, productOrderId));
-    }
+//   @PutMapping("/{deliveryId}/addProductOrder/{productOrderId}")
+//    public ResponseEntity<Delivery> addProductOrderToDelivery(@PathVariable Long deliveryId, @PathVariable Long productOrderId) {
+//        return ResponseEntity.of(deliveryService.addProductOrderToDelivery(deliveryId, productOrderId));
+//    }
 
 
 

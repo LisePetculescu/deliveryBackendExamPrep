@@ -69,8 +69,8 @@ public class InitData implements CommandLineRunner {
         List<Delivery> deliveries = new ArrayList<>();
         // TODO: add deliveries to the database here
         deliveries.add(new Delivery(LocalDate.of(2021,12,5), "Warehouse 1", "Copenhagen", productOrders.subList(0, 3)));
-        deliveries.add(new Delivery("2021-12-02", "Warehouse 2", "Aarhus", productOrders.subList(3, 6)));
-        deliveries.add(new Delivery("2021-12-03", "Warehouse 3", "Odense", productOrders.subList(6, 7));
+        deliveries.add(new Delivery(LocalDate.of(2021, 12, 2), "Warehouse 2", "Aarhus", productOrders.subList(3, 6)));
+        deliveries.add(new Delivery(LocalDate.of(2021, 12, 3), "Warehouse 3", "Odense", productOrders.subList(6, 7)));
 
 
 
